@@ -1,0 +1,155 @@
+/* =============================================
+   AI Fullstack — Custom Theme
+   Apple / Vercel / Made With ML inspired
+   ============================================= */
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ---- Global Typography ---- */
+:root {
+  --md-text-font: "Inter", sans-serif;
+  --md-code-font: "JetBrains Mono", monospace;
+}
+
+/* ---- Light Mode ---- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #000000;
+  --md-accent-fg-color: #4f46e5;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #111111;
+}
+
+/* ---- Dark Mode ---- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0d0d0d;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #818cf8;
+  --md-default-bg-color: #0d0d0d;
+  --md-default-fg-color: #e5e5e5;
+}
+
+/* ---- Hero Section ---- */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+  line-height: 1.6;
+}
+
+/* ---- Project Cards ---- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.card {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+  background: rgba(128, 128, 128, 0.03);
+}
+
+.card:hover {
+  border-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.1);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* ---- Tech Badges ---- */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 3px;
+  background: rgba(79, 70, 229, 0.1);
+  color: #4f46e5;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+/* ---- Roadmap ---- */
+.roadmap-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  font-size: 0.95rem;
+}
+
+/* ---- Divider ---- */
+.section-divider {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  margin: 48px 0;
+}
+
+/* ---- Section Title ---- */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+
+/* ---- Buttons ---- */
+.md-button {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+}
+
+.md-button--primary {
+  background-color: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+/* ---- Content width ---- */
+.md-grid {
+  max-width: 1200px;
+}
+
+/* ---- Hide TOC on homepage ---- */
+.md-sidebar--secondary {
+  display: none;
+}
+

@@ -1,1 +1,117 @@
-site_name: My Docs
+site_name: AI Fullstack
+site_description: Building AI Systems. Learning in Public. Sharing Everything.
+site_author: Your Name
+site_url: https://YOUR_GITHUB_USERNAME.github.io/AIFullstack/
+
+theme:
+  name: material
+
+  # Apple/Vercel inspired fonts
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  # Light and Dark mode toggle
+  palette:
+
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark Mode
+
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light Mode
+
+  # Navigation features
+  features:
+    - navigation.instant       # No page reload, feels like an app
+    - navigation.tracking      # URL updates as you scroll
+    - navigation.tabs          # Top horizontal menu
+    - navigation.sections      # Groups in sidebar
+    - navigation.expand        # Auto expands sidebar
+    - navigation.top           # Back to top button
+    - navigation.indexes       # Section index pages
+    - search.highlight         # Highlights search results
+    - search.suggest           # Search autocomplete
+    - content.code.copy        # Copy button on code blocks
+    - content.code.annotate    # Annotations on code blocks
+    - content.tabs.link        # Synced tabs across pages
+
+  # Icons
+  icon:
+    repo: fontawesome/brands/github
+
+# Your GitHub repo link (shows in top right)
+repo_url: https://github.com/YOUR_GITHUB_USERNAME/AIFullstack
+repo_name: AIFullstack
+
+# Social links in footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_GITHUB_USERNAME
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/YOUR_LINKEDIN_USERNAME
+      name: LinkedIn
+
+# Custom CSS for Apple/Vercel feel
+extra_css:
+  - assets/extra.css
+
+# Markdown extensions for rich content
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Navigation
+nav:
+  - Home: index.md
+  - 🧠 Learning:
+      - Overview: learning/index.md
+      - Python: learning/python.md
+      - SQL: learning/sql.md
+      - Spark: learning/spark.md
+      - Snowflake: learning/snowflake.md
+      - LLMs: learning/llms.md
+  - 🛠 Projects:
+      - Overview: projects/index.md
+      - Spotify ETL: projects/spotify.md
+      - AI Agent: projects/ai-agent.md
+  - 📝 Blog: blog/index.md
+  - 📎 Resources: resources/index.md
+  - 👤 About: about.md
+
